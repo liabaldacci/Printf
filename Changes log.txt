@@ -1,0 +1,5 @@
+30/04 - 16:30
+
+Comportamento atual: 
+-> flags * são substituídas por seus valores respectivos (em caso de arro a funcão retorna -1 e imprime "error")
+-> se houver flag '-' a variavel side vira 1. Podem haver vários '-' em sequência. Não aceita '-' em outros pontos da flag.

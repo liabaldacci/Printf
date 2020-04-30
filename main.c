@@ -3,6 +3,6 @@
 int	main()
 {
 	 char	*name = "Lia and Nat s2";
-	//ft_printf("Hello, %05s", name);
-	printf("|%0s|", name);
+	printf("Hello, %-----------*.*s", 20, 8, name);
+	//printf("|%0s|", name);
 }

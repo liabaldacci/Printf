@@ -3,3 +3,13 @@
 Comportamento atual: 
 -> flags * são substituídas por seus valores respectivos (em caso de arro a funcão retorna -1 e imprime "error")
 -> se houver flag '-' a variavel side vira 1. Podem haver vários '-' em sequência. Não aceita '-' em outros pontos da flag.
+
+04/05 - 18:00
+Comportamento atual:
+-> flags * são substituídas por seus valores respectivos (em caso de arro a funcão retorna -1 e imprime "error")
+-> se houver flag '-' a variavel side vira 1. Podem haver vários '-' em sequência. Não aceita '-' em outros pontos da flag.
+-> o width é colocado na variável det->width e o precision é colocado na variável det->precision;
+
+Para resolver:
+-> se houver mais de uma letra na flag. Ex.: %10.7ad ou %10.ad
+-> se mandar argumento a mais. Ex.: ft_printf("I am %----.*d years old.", 10, 7, 21);

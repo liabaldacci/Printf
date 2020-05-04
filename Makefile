@@ -1,6 +1,6 @@
 NAME = libftprintf.a
 
-FILES = ft_printf.c ft_find_letter.c ft_find_char.c ft_check_flags.c
+FILES = ft_printf.c ft_find_letter.c ft_find_char.c ft_check_flags.c ft_star.c ft_negative.c ft_width.c ft_precision.c
 
 OBJ = $(subst .c,.o,$(FILES))
 

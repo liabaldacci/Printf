@@ -11,5 +11,8 @@ Comportamento atual:
 -> o width é colocado na variável det->width e o precision é colocado na variável det->precision;
 
 Para resolver:
--> se houver mais de uma letra na flag. Ex.: %10.7ad ou %10.ad
--> se mandar argumento a mais. Ex.: ft_printf("I am %----.*d years old.", 10, 7, 21);
+-> se mandar argumento a mais. Ex.: ft_printf("I am %----.*d years old.", 10, 7, 21); 
+-> receber %0s (não pode compilar por acahar que '0' é uma flad e não o width). Width mínimo para string é 1;
+
+Resolvido:
+-> (07/05) se houver mais de uma letra na flag. Ex.: %10.7ad ou %10.ad

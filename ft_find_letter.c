@@ -11,7 +11,10 @@ int		ft_find_letter(char *str)
 			|| str[i] == 'p'|| str[i] == 'd'|| str[i] == 'i'
 			|| str[i] == 'x'|| str[i] == 'X')
 			return (i);
-		i++;
+		else if (ft_isdigit(str[i]) || str[i] == '.' || str[i] == '-' || str[i] == '*')
+			i++;
+		else
+			break;
 	}
 	return (-1);
 }

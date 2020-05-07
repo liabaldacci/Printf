@@ -11,11 +11,15 @@ typedef struct	s_params
 	va_list		ap;
     int			idx_percent;
 	int			idx_letter;
-	char		*flag;
 	int			temp;
 	int			side; /* 0 é direita // 1 é esquerda */
 	int			width; /* número antes do ponto, tem a ver com o número total de caracteres impressos */
 	int			precision; /* número depois do ponto, tem a ver com o número de caracteres impressos da variável */
+	int			zero; /* se tme a flag zero */
+	char		*flag;
+	char		conversion; /* a conversão da flag como csdiuxX */
+	char		padding; /* qual é o padding */
+	int			spaces; /*número de espaços que serão impressos caso tenha width*/
 }				t_pf;
 
 int				ft_printf(const char *str, ...);
@@ -27,4 +31,8 @@ int				ft_star(t_pf *det);
 int				ft_negative(t_pf *det);
 int				ft_width(t_pf *det);
 int				ft_precision(t_pf *det);
+void			ft_init_struct(t_pf *det);
+int				ft_padding(t_pf *det);
+int				ft_conversion(t_pf *det);
+int				ft_printf_s(t_pf *det);
 #endif

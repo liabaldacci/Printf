@@ -1,0 +1,66 @@
+#include "ft_printf.h"
+
+int	main()
+{
+	int n = 12345;//0x3039
+	// %[flags][width][.precision][length]specifier
+
+	// %d
+	// printf("%%diuxX\n");
+	// printf("---------------------------------------------------------\n");
+	// printf("[width]diuxX\n");
+	// //width < len .: width = len
+	// //width > len .: width = width - len
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%10d| years old\n", n);
+	// printf("I am |%3d| years old\n", n);
+	// printf("I am |%d| years old\n", n);
+	// printf("---------------------------------------------------------\n");
+	// printf("[.]d\n");
+	// // precision > len .: precision = precision - len (0 a direita)
+	// // precision < len .: len
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%.10d| years old\n", n);
+	// printf("I am |%.3d| years old\n", n);
+	// printf("I am |%.0d| years old\n", n);
+	// printf("---------------------------------------------------------\n");
+
+	// printf("[-.]diuxX\n");
+	// // precision > len .: precision = precision - len (0 a direita)
+	// // precision < len .: len
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%-.10x| years old\n", n);
+	// printf("I am |%-.3x| years old\n", n);
+	// printf("I am |%-.0x| years old\n", n);
+	// printf("---------------------------------------------------------\n");
+
+	// printf("[width][.]diuxX\n");
+	// já ter feito o calculo do precision
+	// // precision >< len .: espaços = width-precision
+	// // alinha o texto à direita
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%20.10d| years old\n", n);
+	// printf("I am |%20.3d| years old\n", n);
+	// printf("I am |%20.0d| years old\n", n);
+	// printf("---------------------------------------------------------\n");
+	// printf("[-][width][.]diuxX\n");
+	// // precision >< len .: espaços = width-precision
+	// // alinha o texto à esquerda
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%-20.10d| years old\n", n);
+	// printf("I am |%-20.3d| years old\n", n);
+	// printf("I am |%-20.0d| years old\n", n);
+	// printf("---------------------------------------------------------\n");
+
+
+	// printf("[0][-][width][.]diuxX\n");
+	// width 0 ao inves de spaço
+	// não funfa com -
+	// 0 e precision não funfa
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%020.10x| years old\n", n);
+	// printf("I am |%-03x| years old\n", n);
+	// printf("I am |%-0x| years old\n", n);
+	// printf("---------------------------------------------------------\n");
+
+}

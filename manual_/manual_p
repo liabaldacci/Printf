@@ -1,0 +1,48 @@
+#include "ft_printf.h"
+
+int	main()
+{
+	int n = 12345;
+	int *p;
+
+	p = &n;
+
+	//0x3039
+	// %[flags][width][.precision][length]specifier
+
+	// %p
+	// printf("%%p\n");
+	// printf("---------------------------------------------------------\n");
+	// printf("[width]p\n");
+	// //width < len .: width = len
+	// //width > len .: width = width - len
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%20p| years old\n", p);
+	// printf("I am |%3p| years old\n", p);
+	// printf("I am |%p| years old\n", p);
+
+	// printf("---------------------------------------------------------\n");
+	// printf("[0][width]p\n");
+	// // não tem 0 ou .precision
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%020p| years old\n", p);
+	// printf("I am |%03p| years old\n", p);
+	// printf("I am |%0p| years old\n", p);
+
+	// printf("---------------------------------------------------------\n");
+	// printf("[.]d\n");
+	// Não tem
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%.20p| years old\n", p);
+	// printf("I am |%.3p| years old\n", p);
+	// printf("I am |%.0p| years old\n", p);
+	// printf("---------------------------------------------------------\n");
+
+	// printf("[-][width]p\n");
+	// wifth a direita
+	// printf("---------------------------------------------------------\n");
+	// printf("I am |%-20p| years old\n", p);
+	// printf("I am |%-3p| years old\n", p);
+	// printf("---------------------------------------------------------\n");
+
+}

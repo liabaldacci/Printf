@@ -12,7 +12,10 @@ Comportamento atual:
 
 Para resolver:
 -> se mandar argumento a mais. Ex.: ft_printf("I am %----.*d years old.", 10, 7, 21); 
--> receber %0s (não pode compilar por acahar que '0' é uma flad e não o width). Width mínimo para string é 1;
+-> receber %0s (não pode compilar por acahar que '0' é uma flag e não o width). Width mínimo para string é 1;
+-> precision não funciona com conversão 'c';
+-> se houver flag '0' e flag '-' juntas;
 
 Resolvido:
 -> (07/05) se houver mais de uma letra na flag. Ex.: %10.7ad ou %10.ad
+-> (08/05) colocamos free nas funções ft_star, ft_precision, ft_printf_s, ft_negative, ft_printf, ft_width

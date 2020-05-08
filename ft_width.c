@@ -1,8 +1,9 @@
 #include "ft_printf.h"
 
-int	ft_width(t_pf *det)
+int			ft_width(t_pf *det)
 {
-	int	idx;
+	int		idx;
+	char	*temp;
 
 	if (det->flag[0] == '0')
 		det->zero = 1;
@@ -11,6 +12,8 @@ int	ft_width(t_pf *det)
 		idx = det->idx_letter;
 	if (idx == 0)
 		return (0);
-	det->width = ft_atoi(ft_substr(det->flag, 0, idx));
+	temp = ft_substr(det->flag, 0, idx);
+	det->width = ft_atoi(temp);
+	free(temp);
 	return (0);
 }

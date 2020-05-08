@@ -13,7 +13,6 @@ int		ft_check_flags(t_pf *det)
 	if (ft_precision(det) < 0)
 		return (-1);
 	ft_conversion(det);
-	//ft_padding(&det);
 	return (0);
 }
  

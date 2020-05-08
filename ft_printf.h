@@ -35,4 +35,7 @@ void			ft_init_struct(t_pf *det);
 int				ft_padding(t_pf *det);
 int				ft_conversion(t_pf *det);
 int				ft_printf_s(t_pf *det);
+int				ft_printf_c(t_pf *det);
+int				ft_printf_d(t_pf *det);
+void			ft_put_zero(int n);
 #endif

@@ -2,9 +2,9 @@
 
 int	main()
 {
-	ft_printf("My name is %-20.80s", "Lia");
+	ft_printf("My age is %2.3d", 21);
 	printf("\n");
-	printf("My name is %-20.80s", "Lia");
+	printf("My age is %2.3d", 21);
 	// %[flags][width][.precision][length]specifier
 
 	// %s

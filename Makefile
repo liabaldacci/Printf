@@ -3,6 +3,7 @@ NAME = libftprintf.a
 FILES = ft_printf.c ft_find_letter.c ft_find_char.c ft_check_flags.c ft_star.c \
 		ft_negative.c ft_width.c ft_precision.c ft_init_struct.c ft_padding.c \
 		ft_conversion.c ft_printf_s.c ft_printf_c.c ft_printf_d.c ft_put_zero.c \
+		ft_int_formatting.c ft_print_int.c ft_itoa_base.c ft_printf_p.c ft_printf_u.c \
 		
 
 OBJ = $(subst .c,.o,$(FILES))

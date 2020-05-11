@@ -13,4 +13,5 @@ void	ft_init_struct(t_pf *det)
 	det->padding = ' ';
 	det->zero = 0;
 	det->spaces = 0;
+	det->prec_zeros = 0;
 }

@@ -10,6 +10,8 @@ int			ft_precision(t_pf *det)
 	idx2 = ft_find_letter(det->flag);
 	if (idx < 0 || idx2 == 1)
 		return (0);
+	if (det->conversion == 'p')
+		return (-1);
 	temp = ft_substr(det->flag, idx + 1, idx2 - idx);
 	det->precision = ft_atoi(temp);
 	free(temp);

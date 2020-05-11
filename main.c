@@ -2,13 +2,14 @@
 
 int	main()
 {
-	ft_printf("My age is %2.3d", 21);
+	int age = -21;
+	ft_printf("My age is %20u", age);
 	printf("\n");
-	printf("My age is %2.3d", 21);
+	printf("My age is %20u", age);
 	// %[flags][width][.precision][length]specifier
 
 	// %s
-	// maximo len(str) 
+	// maximo len(str)
 	// 0 não imprime | undefined behavior
 	// printf("%%s\n");
 	// printf("---------------------------------------------------------\n");
@@ -44,5 +45,5 @@ int	main()
 	// printf("I am |%-20.3s| years old\n", "teste");
 	// printf("I am |%-20.0s| years old\n", "teste");
 
-	
+
 }

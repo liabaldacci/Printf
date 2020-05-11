@@ -20,6 +20,7 @@ typedef struct	s_params
 	char		conversion; /* a conversão da flag como csdiuxX */
 	char		padding; /* qual é o padding */
 	int			spaces; /*número de espaços que serão impressos caso tenha width*/
+	int			prec_zeros;
 }				t_pf;
 
 int				ft_printf(const char *str, ...);
@@ -38,4 +39,9 @@ int				ft_printf_s(t_pf *det);
 int				ft_printf_c(t_pf *det);
 int				ft_printf_d(t_pf *det);
 void			ft_put_zero(int n);
+int				ft_print_int(t_pf *det, char *number);
+int				ft_int_formatting(t_pf *det, int len, int i);
+char			*ft_itoa_base(size_t nb, int base, char updown);
+int				ft_printf_p(t_pf *det);
+int				ft_printf_u(t_pf *det);
 #endif

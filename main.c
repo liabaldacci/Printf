@@ -2,10 +2,10 @@
 
 int	main()
 {
-	int age = -21;
-	ft_printf("My age is %20u", age);
+	//int age = -21;
+	ft_printf("I am 100%10%");
 	printf("\n");
-	printf("My age is %20u", age);
+	printf("I am 100%10%");
 	// %[flags][width][.precision][length]specifier
 
 	// %s

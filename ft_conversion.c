@@ -13,5 +13,7 @@ int		ft_conversion(t_pf *det)
 		ft_printf_p(det);
 	else if (det->conversion == 'u')
 		ft_printf_u(det);
+	else if (det->conversion == '%')
+		ft_printf_percent(det);
 	return (0);
 }

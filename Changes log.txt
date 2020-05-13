@@ -11,9 +11,9 @@ Comportamento atual:
 -> o width é colocado na variável det->width e o precision é colocado na variável det->precision;
 
 Para resolver:
--> se mandar argumento a mais. Ex.: ft_printf("I am %----.*d years old.", 10, 7, 21); 
+-> se mandar argumento a mais. Ex.: ft_printf("I am %d years old.", 21, "Lia"); 
 -> receber %0s (não pode compilar por achar que '0' é uma flag e não o width). Width mínimo para string é 1;
--> loop para quando há mais de 1 argumento.
+-> retornar total de letras impressas
 
 Resolvido:
 -> (07/05) se houver mais de uma letra na flag. Ex.: %10.7ad ou %10.ad
@@ -21,3 +21,4 @@ Resolvido:
 -> (11/05) precision não funciona com conversão 'c';
 -> (11/05) Terminadas todas as flags e conversões.
 -> (12/05) se houver flag '0' e flag '-' juntas;
+-> (13/05) loop para quando há mais de 1 argumento.

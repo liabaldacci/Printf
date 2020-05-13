@@ -45,4 +45,5 @@ char			*ft_itoa_base(size_t nb, int base, char updown);
 int				ft_printf_p(t_pf *det);
 int				ft_printf_u(t_pf *det);
 int				ft_printf_percent(t_pf *det);
+int				ft_count_args(char *str);
 #endif

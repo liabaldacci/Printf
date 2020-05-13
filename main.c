@@ -3,9 +3,9 @@
 int	main()
 {
 	//int age = -21;
-	ft_printf("I am 100%10%");
+	ft_printf("I am 100%10% sure that my name is %-5s.", "lia");
 	printf("\n");
-	printf("I am 100%10%");
+	printf("I am 100%10% sure that my name is %-5s.", "lia");
 	// %[flags][width][.precision][length]specifier
 
 	// %s

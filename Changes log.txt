@@ -11,9 +11,10 @@ Comportamento atual:
 -> o width é colocado na variável det->width e o precision é colocado na variável det->precision;
 
 Para resolver:
--> se mandar argumento a mais. Ex.: ft_printf("I am %d years old.", 21, "Lia"); 
+-> se mandar argumento a mais. Ex.: ft_printf("I am %d years old.", 21, "Lia"); (NÃO CONSEGUIMOS PQ NÃO SABEMOS SE PRECISA)
 -> receber %0s (não pode compilar por achar que '0' é uma flag e não o width). Width mínimo para string é 1;
 -> retornar total de letras impressas
+-> norminette
 
 Resolvido:
 -> (07/05) se houver mais de uma letra na flag. Ex.: %10.7ad ou %10.ad

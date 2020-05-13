@@ -7,6 +7,7 @@ int			ft_count_args(char *str)
 	char	*temp;
 	int		args;
 
+
 	i = 0;
 	args = 0;
 	while (i < ft_strlen(str))

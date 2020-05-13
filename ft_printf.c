@@ -8,7 +8,7 @@ int			ft_printf(const char *str, ...)
 	char	*s;
 	int		args;
 
-	va_start(det.ap, str);
+
 	args = ft_count_args((char *)str);
 	if (args < 0)
 	{
@@ -16,6 +16,7 @@ int			ft_printf(const char *str, ...)
 		return (-1);
 	}
 	current = 0;
+	va_start(det.ap, str);
 	while (current < args)
 	{
 		ft_init_struct(&det);
@@ -44,5 +45,7 @@ int			ft_printf(const char *str, ...)
 		str = ft_substr(str, det.idx_letter + 1, ft_strlen(str));
 	}
 	ft_putstr_fd((char *)str, 1);
+	free((char *)str);
+	va_end(det.ap);
 	return(0);
 }

@@ -13,7 +13,11 @@ int		ft_int_formatting(t_pf *det, int len, int i)
 	if (det->width != -1) /* se a width existir */
 	{
 		if (det->width > len && det->width > det->precision) /* se a width for maior do que a len o número de espaços do padding vai ser o width - len */
+		{
 			det->spaces = det->width - i;
+			if (det->negative > 0)
+				det->spaces--;
+		}
 	}
 	return (0);
 }

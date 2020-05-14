@@ -21,6 +21,8 @@ typedef struct	s_params
 	char		padding; /* qual é o padding */
 	int			spaces; /*número de espaços que serão impressos caso tenha width*/
 	int			prec_zeros;
+	int			total;
+	int			negative;
 }				t_pf;
 
 int				ft_printf(const char *str, ...);

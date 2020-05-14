@@ -3,9 +3,12 @@
 int	main()
 {
 	//int age = -21;
-	ft_printf("I am 100%10% sure that my name is %-5s.", "lia");
-	printf("\n");
-	printf("I am 100%10% sure that my name is %-5s.", "lia");
+	int result;
+	//char *s_hidden = "hi low";
+	result = ft_printf("this %i number", -267);
+	printf("\n%d\n", result);
+	result = printf("this %i number", -267);
+	printf("\n%d", result);
 	// %[flags][width][.precision][length]specifier
 
 	// %s

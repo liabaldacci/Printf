@@ -23,3 +23,5 @@ Resolvido:
 -> (11/05) Terminadas todas as flags e conversões.
 -> (12/05) se houver flag '0' e flag '-' juntas;
 -> (13/05) loop para quando há mais de 1 argumento.
+
+14/05 -> 638/745 testes passando

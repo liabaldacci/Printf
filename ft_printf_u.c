@@ -14,6 +14,7 @@ int				ft_printf_u(t_pf *det)
 	i = len;
 	ft_int_formatting(det, len, i);
 	ft_print_int(det, number);
+	det->total += ft_strlen(number) + det->prec_zeros + det->spaces;
 	free(number);
 	return (0);
 }

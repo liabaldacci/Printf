@@ -14,4 +14,5 @@ void	ft_init_struct(t_pf *det)
 	det->zero = 0;
 	det->spaces = 0;
 	det->prec_zeros = 0;
+	det->negative = 0;
 }

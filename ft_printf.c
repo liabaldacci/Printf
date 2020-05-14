@@ -17,6 +17,7 @@ int			ft_printf(const char *str, ...)
 	}
 	current = 0;
 	va_start(det.ap, str);
+	det.total = 0;
 	while (current < args)
 	{
 		ft_init_struct(&det);
@@ -34,6 +35,7 @@ int			ft_printf(const char *str, ...)
 		det.flag = ft_substr(str, det.idx_percent + 1, det.idx_letter - det.idx_percent);
 		s = ft_substr(str, 0, det.idx_percent);
 		ft_putstr_fd(s, 1);
+		det.total += ft_strlen(s);
 		if (ft_check_flags(&det) < 0)
 		{
 			ft_putstr_fd("ERROR", 1);
@@ -45,7 +47,9 @@ int			ft_printf(const char *str, ...)
 		str = ft_substr(str, det.idx_letter + 1, ft_strlen(str));
 	}
 	ft_putstr_fd((char *)str, 1);
-	free((char *)str);
+	det.total += ft_strlen((char *)str);
+	if (args > 0)
+		free((char *)str);
 	va_end(det.ap);
-	return(0);
+	return(det.total);
 }

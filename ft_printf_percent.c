@@ -23,5 +23,6 @@ int		ft_printf_percent(t_pf *det)
 			ft_putchar_fd(det->padding, 1);
 		ft_putchar_fd('%', 1);
 	}
+	det->total += 1 + det->spaces;
 	return (0);
 }

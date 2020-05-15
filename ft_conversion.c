@@ -6,8 +6,7 @@ int		ft_conversion(t_pf *det)
 		ft_printf_s(det);
 	else if (det->conversion == 'c')
 		ft_printf_c(det);
-	else if (det->conversion == 'd' || det->conversion == 'i' 
-			|| det->conversion == 'x' || det->conversion == 'X')
+	else if (det->conversion == 'd' || det->conversion == 'i')
 		ft_printf_d(det);
 	else if (det->conversion == 'p')
 		ft_printf_p(det);
@@ -15,5 +14,7 @@ int		ft_conversion(t_pf *det)
 		ft_printf_u(det);
 	else if (det->conversion == '%')
 		ft_printf_percent(det);
+	else if (det->conversion == 'x' || det->conversion == 'X')
+		ft_printf_xX(det);
 	return (0);
 }

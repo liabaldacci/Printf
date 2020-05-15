@@ -8,7 +8,7 @@ char	*ft_itoa_base(size_t nb, int base, char updown)
 
 	cont_num = 1;
 	aux = nb;
-	while ((aux = aux / base) > 1)
+	while ((aux = aux / base) > 0)
 		cont_num++;
 	str = (char *)malloc((cont_num + 1) * sizeof(char));
 	if (!str)

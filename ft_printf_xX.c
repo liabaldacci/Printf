@@ -1,13 +1,13 @@
 #include "ft_printf.h"
 
-int			ft_printf_d(t_pf *det)
+int		ft_printf_xX(t_pf *det)
 {
-	int		num;
+	size_t	num;
 	char	*number;
 	int 	len;
 
 	ft_padding(det);
-	num = va_arg(det->ap, int);
+	num = va_arg(det->ap, size_t);
 	if (num < 0)
 	{
 		det->negative = 1;

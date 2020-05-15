@@ -13,7 +13,7 @@ Comportamento atual:
 Para resolver:
 -> se mandar argumento a mais. Ex.: ft_printf("I am %d years old.", 21, "Lia"); (NÃO CONSEGUIMOS PQ NÃO SABEMOS SE PRECISA)
 -> receber %0s (não pode compilar por achar que '0' é uma flag e não o width). Width mínimo para string é 1;
--> retornar total de letras impressas
+
 -> norminette
 
 Resolvido:
@@ -23,5 +23,7 @@ Resolvido:
 -> (11/05) Terminadas todas as flags e conversões.
 -> (12/05) se houver flag '0' e flag '-' juntas;
 -> (13/05) loop para quando há mais de 1 argumento.
+-> (14/05) retornar total de letras impressas.
 
 14/05 -> 638/745 testes passando
+15/05 16:55 -> 733/745 testes passando

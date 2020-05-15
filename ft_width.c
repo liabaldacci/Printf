@@ -5,8 +5,6 @@ int			ft_width(t_pf *det)
 	int		idx;
 	char	*temp;
 
-	if (det->flag[0] == '0')
-		det->zero = 1;
 	idx = ft_find_char(det->flag, '.');
 	if (idx < 0)
 		idx = det->idx_letter;

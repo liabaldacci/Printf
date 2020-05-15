@@ -17,7 +17,7 @@ int			ft_printf_p(t_pf *det)
 	ft_int_formatting(det, len, i);
 	temp = number;
 	number = ft_strjoin("0x", number);
-	det->total += 14 + det->spaces;
+	det->total += ft_strlen(number) + det->spaces;
 	ft_print_int(det, number);
 	free(temp);
 	free(number);

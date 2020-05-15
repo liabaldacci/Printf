@@ -6,9 +6,15 @@ int			ft_negative(t_pf *det)
 	char	*temp;
 
 	i = 0;
+	if (det->flag[0] == '0')
+	{
+		det->zero = 1;
+		i++;
+	}
 	while (det->flag[i] == '-')
 	{
 		det->side = 1;
+		det->zero = 0;
 		i++;
 	}
 	temp = det->flag;

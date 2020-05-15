@@ -16,10 +16,8 @@ int		ft_printf_xX(t_pf *det)
 	}
 	if (det->conversion == 'x')
 		number = ft_itoa_base(num, 16, 'a');
-	else if (det->conversion == 'X')
-		number = ft_itoa_base(num, 16, 'A');
 	else
-		number = ft_itoa(num);
+		number = ft_itoa_base(num, 16, 'A');
 	len = det->precision == 0 && num == 0 ? 0 : ft_strlen(number);
 	ft_int_formatting(det, len, len);
 	ft_print_int(det, number);

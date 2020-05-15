@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 int			ft_numlen(long nb)
 {
@@ -32,7 +32,7 @@ int			ft_numlen(long nb)
 	return (len);
 }
 
-char		*ft_itoa(int n)
+char		*ft_itoa(long n)
 {
 	long	number;
 	int		i;

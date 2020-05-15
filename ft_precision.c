@@ -15,8 +15,6 @@ int			ft_precision(t_pf *det)
 		det->precision = 0;
 		return (0);
 	}
-	if (det->conversion == 'p')
-		return (-1);
 	temp = ft_substr(det->flag, idx + 1, idx2 - idx);
 	det->precision = ft_atoi(temp);
 	free(temp);

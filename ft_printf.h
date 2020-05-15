@@ -49,4 +49,6 @@ int				ft_printf_u(t_pf *det);
 int				ft_printf_percent(t_pf *det);
 int				ft_count_args(char *str);
 int				ft_printf_xX(t_pf *det);
+int				ft_print_pointer(t_pf *det, char *number);
+char			*ft_itoa(long n);
 #endif

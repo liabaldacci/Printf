@@ -5,9 +5,9 @@ int	main()
 	//int age = -21;
 	int result;
 	//char *s_hidden = "hi low";
-	result = ft_printf("|%x|", 4294967295u);
+	result = ft_printf("this %i number", -267);
 	printf("\n%d\n", result);
-	result = printf("|%x|", 4294967295u);
+	result = printf("this %i number", -267);
 	printf("\n%d", result);
 	// %[flags][width][.precision][length]specifier
 

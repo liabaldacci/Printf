@@ -27,3 +27,4 @@ Resolvido:
 
 14/05 -> 638/745 testes passando
 15/05 16:55 -> 733/745 testes passando
+15/05 19:12 -> todos os testes passando

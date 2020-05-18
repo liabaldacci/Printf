@@ -6,9 +6,9 @@ int		ft_printf_percent(t_pf *det)
 
 	i = 0;
 	ft_padding(det);
-	if (det->width != -1) /* se a width existir */
+	if (det->width != -1)
 	{
-		if (det->width > 1) /* se a width for maior do que a 1 (tamanho do char) o número de espaços do padding vai ser o width - len */
+		if (det->width > 1)
 			det->spaces = det->width - 1;
 	}
 	if (det->side == 1)

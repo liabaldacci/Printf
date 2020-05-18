@@ -2,7 +2,7 @@
 
 int		ft_star(t_pf *det)
 {
-	int 	star;
+	int		star;
 	int		i;
 	char	*flag1;
 	char	*temp1;
@@ -20,7 +20,7 @@ int		ft_star(t_pf *det)
 		free(temp2);
 		temp1 = ft_substr(det->flag, star + 1, ft_strlen(det->flag));
 		det->flag = ft_strjoin(flag1, temp1);
-		free (flag1);
+		free(flag1);
 		free(temp1);
 		i++;
 	}

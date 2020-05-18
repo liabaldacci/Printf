@@ -1,14 +1,23 @@
 #include "ft_printf.h"
 
-int				ft_printf_u(t_pf *det)
+int		ft_printf_x(t_pf *det)
 {
-	size_t		num;
-	char		*number;
-	int			len;
+	size_t	num;
+	char	*number;
+	int		len;
 
 	ft_padding(det);
 	num = va_arg(det->ap, size_t);
-	number = ft_itoa_base(num, 10, 'a');
+	if (num < 0)
+	{
+		det->negative = 1;
+		num = num * -1;
+		det->total++;
+	}
+	if (det->conversion == 'x')
+		number = ft_itoa_base(num, 16, 'a');
+	else
+		number = ft_itoa_base(num, 16, 'A');
 	len = det->precision == 0 && num == 0 ? 0 : ft_strlen(number);
 	ft_int_formatting(det, len, len);
 	ft_print_int(det, number);

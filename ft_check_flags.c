@@ -2,7 +2,7 @@
 
 int		ft_check_flags(t_pf *det)
 {
-	if (ft_star(det) <	0)
+	if (ft_star(det) < 0)
 		return (-1);
 	if (ft_negative(det) < 0)
 		return (-1);
@@ -13,4 +13,3 @@ int		ft_check_flags(t_pf *det)
 	ft_conversion(det);
 	return (0);
 }
- 

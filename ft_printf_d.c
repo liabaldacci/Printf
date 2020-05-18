@@ -4,7 +4,7 @@ int			ft_printf_d(t_pf *det)
 {
 	long	num;
 	char	*number;
-	int 	len;
+	int		len;
 
 	ft_padding(det);
 	num = va_arg(det->ap, int);

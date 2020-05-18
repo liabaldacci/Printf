@@ -28,6 +28,3 @@ int		ft_print_pointer(t_pf *det, char *number)
 	}
 	return (0);
 }
-// |00000x4d2|
-// 7
-// |0x0000004d2| 

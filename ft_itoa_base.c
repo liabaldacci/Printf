@@ -1,9 +1,9 @@
 #include "ft_printf.h"
 
-char	*ft_itoa_base(size_t nb, int base, char updown)
+char				*ft_itoa_base(size_t nb, int base, char updown)
 {
 	int				cont_num;
-	size_t	aux;
+	size_t			aux;
 	char			*str;
 
 	cont_num = 1;

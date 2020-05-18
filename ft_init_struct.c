@@ -9,7 +9,7 @@ void	ft_init_struct(t_pf *det)
 	det->temp = 0;
 	det->side = 0;
 	det->width = 0;
-	det->precision = -1; 
+	det->precision = -1;
 	det->padding = ' ';
 	det->zero = 0;
 	det->spaces = 0;

@@ -43,7 +43,7 @@ int				ft_printf_d(t_pf *det);
 void			ft_put_zero(int n);
 int				ft_print_int(t_pf *det, char *number);
 int				ft_int_formatting(t_pf *det, int len, int i);
-char			*ft_itoa_base(size_t nb, int base, char updown);
+char			*ft_itoa_base(size_t nb, int base, char updown, t_pf *det);
 int				ft_printf_p(t_pf *det);
 int				ft_printf_u(t_pf *det);
 int				ft_printf_percent(t_pf *det);
@@ -51,4 +51,5 @@ int				ft_count_args(char *str);
 int				ft_printf_x(t_pf *det);
 int				ft_print_pointer(t_pf *det, char *number);
 char			*ft_itoa(long n);
+char			*ft_itoa_u(size_t nb, int base, char updown);
 #endif

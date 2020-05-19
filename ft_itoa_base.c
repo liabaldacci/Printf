@@ -1,6 +1,18 @@
 #include "ft_printf.h"
 
-char				*ft_itoa_base(size_t nb, int base, char updown)
+static char	*ft_long_number(char *str, t_pf *det)
+{
+	int i;
+
+	i = 0;
+	if (ft_strlen(str) > 8 && det->conversion != 'p')
+		i = ft_strlen(str) - 8;
+	while (str[i] == '0' && i < ft_strlen(str) - 1)
+		i++;
+	return (&str[i]);
+}
+
+char				*ft_itoa_base(size_t nb, int base, char updown, t_pf *det)
 {
 	int				cont_num;
 	size_t			aux;
@@ -23,5 +35,5 @@ char				*ft_itoa_base(size_t nb, int base, char updown)
 		nb = nb / base;
 		cont_num--;
 	}
-	return (str);
+	return (ft_long_number(str, det));
 }

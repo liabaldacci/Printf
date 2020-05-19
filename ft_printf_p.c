@@ -24,7 +24,7 @@ int			ft_printf_p(t_pf *det)
 
 	ft_padding(det);
 	num = va_arg(det->ap, size_t);
-	number = ft_itoa_base(num, 16, 'a');
+	number = ft_itoa_base(num, 16, 'a', det);
 	if (det->precision > ft_strlen(number))
 		len = ft_strlen(number);
 	else if (det->precision == 0 && num == 0)

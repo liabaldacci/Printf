@@ -1,14 +1,14 @@
 #include "ft_printf.h"
 
-int				ft_printf_u(t_pf *det)
+int						ft_printf_u(t_pf *det)
 {
-	size_t		num;
-	char		*number;
-	int			len;
+	unsigned int		num;
+	char				*number;
+	int					len;
 
 	ft_padding(det);
-	num = va_arg(det->ap, size_t);
-	number = ft_itoa_base(num, 10, 'a');
+	num = va_arg(det->ap, unsigned int);
+	number = ft_itoa_u(num, 10, 'a');
 	len = det->precision == 0 && num == 0 ? 0 : ft_strlen(number);
 	ft_int_formatting(det, len, len);
 	ft_print_int(det, number);
